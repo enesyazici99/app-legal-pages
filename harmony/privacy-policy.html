@@ -91,7 +91,7 @@
     <div class="container">
         <h1>Privacy Policy</h1>
         <div class="app-name">Harmony: Color Analysis AI</div>
-        <div class="last-updated">Last Updated: May 3, 2026</div>
+        <div class="last-updated">Last Updated: May 4, 2026</div>
 
         <p>This Privacy Policy describes how Harmony ("we", "our", "the App") collects, uses, and shares your information when you use the Harmony mobile application.</p>
 
@@ -147,6 +147,19 @@
 
         <h2>Photo Library Permission</h2>
         <p>Harmony asks for permission to access photos you explicitly choose using the system photo picker. The App does not enumerate your full library; only the selfie you select is read. You can revoke or change this permission at any time in Settings &gt; Privacy &amp; Security &gt; Photos &gt; Harmony.</p>
+
+        <h2>Face Data</h2>
+        <p>This section covers how Harmony handles face data, in line with App Store Review Guideline 5.1.1 and Apple's Face Data privacy requirements.</p>
+        <ul>
+            <li><strong>What face data we collect:</strong> The single selfie photograph you explicitly choose using the system photo picker. We do <strong>not</strong> use ARKit, the TrueDepth camera, Vision face landmarks, or any face-recognition / face-identification API. We do not build a face template, faceprint, or biometric identifier of any kind. We never attempt to identify who you are.</li>
+            <li><strong>How face data is used:</strong> The selfie is sent over HTTPS to our analysis providers (Anthropic Claude vision and OpenAI image generation, listed above) for the sole purpose of generating your color analysis, facial-feature reading, harmony score, hair guide, makeup or grooming suggestions, and eyewear-frame recommendations. The visual analysis informs editorial recommendations only; it is not used for authentication, verification, identification, advertising, or any other purpose.</li>
+            <li><strong>Sharing:</strong> Face data is shared <strong>only</strong> with the two analysis providers above, and only at request time. It is not shared with any other third party. It is not sold. It is not used to build advertising profiles. It is not combined with data from other sources to identify you.</li>
+            <li><strong>Storage on our servers:</strong> We do not store the selfie on our servers. The image is held in memory only for the duration of the API call and is released as soon as the response returns.</li>
+            <li><strong>Storage on the analysis providers' servers:</strong> Anthropic and OpenAI may retain API request payloads for a limited period for abuse-monitoring purposes per their published policies (linked above). Neither provider uses Harmony API traffic for model training under their consumer-API terms.</li>
+            <li><strong>Storage on your device:</strong> If you grant the App permission to keep selfies locally (e.g. for the Plus tier "track changes over time" feature), the original photo is stored on your device only and never uploaded again. The generated PNG variants of your face (palette portraits, hair looks, frame previews) are stored locally on your device for the lifetime of your installation.</li>
+            <li><strong>Retention:</strong> On our servers — none (transient only). On your device — until you delete them in-app or uninstall the App. On the analysis providers' servers — governed by their respective retention policies (typically 30 days for abuse review).</li>
+            <li><strong>Deletion:</strong> Uninstalling Harmony removes all locally stored face data. You may also delete individual generated images from within the App.</li>
+        </ul>
 
         <h2>Tracking and Advertising</h2>
         <p>Harmony does not currently display advertisements and does not collect the Advertising Identifier (IDFA). If we add ad-supported features in the future, we will request your permission via App Tracking Transparency and update this Privacy Policy accordingly.</p>
