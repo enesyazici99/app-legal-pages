@@ -49,16 +49,16 @@
         <ul>
             <li><strong>Gameplay Progress:</strong> Levels completed, scores, and exhibit reveal state are stored locally using on-device storage (Hive). This data never leaves your device.</li>
             <li><strong>Settings:</strong> Audio preferences, daily challenge state, and similar in-app settings are stored locally on your device.</li>
-            <li><strong>Purchase Information:</strong> If you make in-app purchases, the transaction is processed by Apple's App Store. We rely on RevenueCat to verify your subscription status; RevenueCat receives an anonymous user identifier and your subscription state. We do not receive your payment details.</li>
-            <li><strong>Advertising Identifier:</strong> If you grant App Tracking Transparency permission, our ad partner may receive your IDFA for ad personalization. You can decline this prompt or change your choice at any time in your device's Settings.</li>
+            <li><strong>Purchase Information:</strong> If you make in-app purchases, the transaction is processed by the Apple App Store or Google Play Store. We rely on RevenueCat to verify your subscription status; RevenueCat receives an anonymous user identifier and your subscription state. We do not receive your payment details.</li>
+            <li><strong>Advertising Identifier:</strong> Our ad partner may receive your device's advertising identifier (IDFA on iOS, Advertising ID on Android) for ad personalization. On iOS this requires App Tracking Transparency permission; on Android a consent prompt is shown in the European Economic Area and the UK. You can decline, or change your choice at any time in your device's Settings.</li>
         </ul>
 
         <h2>Third-Party Services</h2>
         <p>Memorium uses a small number of third-party services to deliver content, show ads (free tier), and manage subscriptions:</p>
         <ul>
-            <li><strong>AppLovin MAX (advertising):</strong> Serves interstitial and rewarded ads on the free tier. AppLovin and its mediation partners may collect device identifiers and ad-engagement data subject to your ATT permission. See <a href="https://www.applovin.com/privacy/" target="_blank" style="color: #F3A53C;">AppLovin's Privacy Policy</a>.</li>
+            <li><strong>AppLovin MAX (advertising):</strong> Serves interstitial and rewarded ads on the free tier. AppLovin and its mediation partners may collect device identifiers and ad-engagement data subject to your tracking or consent choice on your platform. See <a href="https://www.applovin.com/privacy/" target="_blank" style="color: #F3A53C;">AppLovin's Privacy Policy</a>.</li>
             <li><strong>RevenueCat (subscription management):</strong> Manages in-app purchase state and entitlements. Stores an anonymous user identifier. See <a href="https://www.revenuecat.com/privacy/" target="_blank" style="color: #F3A53C;">RevenueCat's Privacy Policy</a>.</li>
-            <li><strong>Apple StoreKit:</strong> Processes in-app purchases. See <a href="https://www.apple.com/legal/privacy/" target="_blank" style="color: #F3A53C;">Apple's Privacy Policy</a>.</li>
+            <li><strong>Apple StoreKit / Google Play Billing:</strong> Processes in-app purchases, depending on where you obtained the App. See <a href="https://www.apple.com/legal/privacy/" target="_blank" style="color: #F3A53C;">Apple's Privacy Policy</a>.</li>
             <li><strong>jsDelivr CDN:</strong> Serves the exhibit reveal photographs and intro videos. jsDelivr does not require accounts and may log standard request metadata (IP address, request time) for caching. See <a href="https://www.jsdelivr.com/terms/privacy-policy-jsdelivr-net" target="_blank" style="color: #F3A53C;">jsDelivr's Privacy Policy</a>.</li>
             <li><strong>Firebase Crashlytics (crash reporting):</strong> Captures anonymized crash logs so we can fix bugs. No personal information is associated with the reports. See <a href="https://firebase.google.com/support/privacy/" target="_blank" style="color: #F3A53C;">Firebase's Privacy Policy</a>.</li>
         </ul>
@@ -76,7 +76,11 @@
 
         <h2>Advertising</h2>
         <p>Memorium offers a free tier that shows interstitial and rewarded ads served via AppLovin MAX. Subscribers to the "No Ads" or higher tier do not see any advertising, and no ad SDKs are initialized for those users on launch.</p>
-        <p>If you grant App Tracking Transparency permission, ad partners may use your advertising identifier (IDFA) for personalized ads. If you deny ATT, you will still see ads, but they will be less personalized.</p>
+        <p>Ad partners may use your advertising identifier (IDFA on iOS, Advertising ID on Android) for personalized ads. If you decline, you will still see ads, but they will be less personalized.</p>
+        <ul>
+            <li><strong>On iOS:</strong> permission is requested under Apple's App Tracking Transparency (ATT) framework; change it in Settings &gt; Privacy &amp; Security &gt; Tracking.</li>
+            <li><strong>On Android:</strong> reset or delete the identifier in Settings &gt; Google &gt; Ads.</li>
+        </ul>
 
         <h2>In-App Purchases</h2>
         <p>Memorium offers optional subscriptions and one-time purchases:</p>
@@ -84,7 +88,7 @@
             <li><strong>No Ads (weekly / one-time):</strong> Removes all advertising and grants unlimited peeks.</li>
             <li><strong>Curator's Pass / No Ads + 3 Modes (weekly / one-time):</strong> Above plus access to the three premium game modes.</li>
         </ul>
-        <p>Subscriptions auto-renew until cancelled in your Apple ID settings. Purchases can be restored on the same Apple ID.</p>
+        <p>Subscriptions auto-renew until cancelled in your Apple ID or Google Play account settings. Purchases can be restored with the same Apple ID or Google account.</p>
 
         <h2>Children's Privacy</h2>
         <p>Memorium is not directed at children under 13. The App does not knowingly collect personal information from children under 13. If you believe a child has provided information through the App, please contact us so we can address it.</p>
@@ -92,7 +96,7 @@
         <h2>Your Privacy Rights by Region</h2>
 
         <h3>GDPR (European Economic Area &amp; UK)</h3>
-        <p>If you reside in the EEA or UK, you have the right to access, rectify, or delete your data, and to withdraw consent for ad personalization at any time via your device's ATT settings.</p>
+        <p>If you reside in the EEA or UK, you have the right to access, rectify, or delete your data, and to withdraw consent for ad personalization at any time via your device's tracking settings (ATT on iOS, Google Ads settings on Android) or the consent prompt.</p>
 
         <h3>LGPD (Brazil)</h3>
         <p>If you reside in Brazil, you have rights of access, correction, deletion, and consent withdrawal under the LGPD. Contact us to exercise them.</p>
